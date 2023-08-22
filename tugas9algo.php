@@ -45,15 +45,13 @@ if (isset($_POST['submit'])) {
             $namab = "Desember";
         }
 
-        $tanggal_lahir = $tanggal . " -" . $namab . "- " . $tahun ;
+        $tanggal_lahir = $tanggal . "-" . $namab . "-" . $tahun ;
 
     
 
 
     
-        echo "<br>No Golongan : $no_golongan <br>";
-        echo "Tanggal Lahir : $tanggal_lahir <br>";
-        echo "No Urutan : $no_urutan";
+
     }
 }
 
@@ -114,6 +112,12 @@ if (isset($_POST['submit'])) {
             <label for="nopega">No Pegawai:</label>
             <input type="text" name="nopega" id="nopega">
             <input type="submit" value="Submit" name="submit">
+            <?php
+
+    echo "<br>No Golongan : $no_golongan <br>";
+    echo "Tanggal Lahir : $tanggal_lahir <br>";
+    echo "No Urutan : $no_urutan";
+            ?>
         </form>
     </div>
 </body>
