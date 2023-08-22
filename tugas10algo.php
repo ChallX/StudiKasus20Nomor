@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>data waktu tambah 1 detik</title>
+    <title> Tambah 1 Detik </title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <td><input type="number" name="mm"></td>
         </tr>
         <tr>
-            <td>Input detik</td>
+            <td>Input Detik</td>
             <td><input type="number" name="ss"></td>
         </tr>
             <td><input type="submit" value="Submit" name="submit"></td>
