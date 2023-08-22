@@ -1,7 +1,7 @@
 <?php
 
-$suhu_fahrenheit = 0;
-$suhu_celcius = 0;
+$suhu_fahrenheit = 0 ;
+$suhu_celcius = 0 ;
 
 if (isset($_POST['submit'])) {
     $suhu_fahrenheit = $_POST["suhu"];
