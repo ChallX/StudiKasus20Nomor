@@ -47,11 +47,16 @@ if (isset($_POST['submit'])) {
 
         $tanggal_lahir = $tanggal . " -" . $namab . "- " . $tahun ;
 
+    
+
+
+    
         echo "<br>No Golongan : $no_golongan <br>";
         echo "Tanggal Lahir : $tanggal_lahir <br>";
         echo "No Urutan : $no_urutan";
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -60,18 +65,57 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <form action="" method="post">
-        <table>
-            <tr>
-                <td>No Pegawai: </td>
-                <td><input type="text" name="nopega"></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="submit" name="submit"></td>
-            </tr>
-        </table>
-    </form>
+    <div class="container">
+        <form action="" method="post">
+            <label for="nopega">No Pegawai:</label>
+            <input type="text" name="nopega" id="nopega">
+            <input type="submit" value="Submit" name="submit">
+        </form>
+    </div>
 </body>
 </html>
+
