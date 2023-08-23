@@ -110,7 +110,7 @@ if (isset($_POST['submit'])) {
     <div class="container">
         <form action="" method="post">
             <label for="nopega">No Pegawai:</label>
-            <input type="text" name="nopega" id="nopega">
+            <input type="text" name="nopega" required id="nopega">
             <input type="submit" value="Submit" name="submit">
             <?php
 
