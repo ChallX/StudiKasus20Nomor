@@ -114,9 +114,12 @@ if (isset($_POST['submit'])) {
             <input type="submit" value="Submit" name="submit">
             <?php
 
-    echo "<br>No Golongan : $no_golongan <br>";
+    if (isset($_POST['submit'])) {
+            echo "<br>No Golongan : $no_golongan <br>";
     echo "Tanggal Lahir : $tanggal_lahir <br>";
     echo "No Urutan : $no_urutan";
+    }
+
             ?>
         </form>
     </div>

@@ -69,15 +69,15 @@
         <table>
         <tr>
             <td>Input Jam</td>
-            <td><input type="number" name="hh"></td>
+            <td><input type="number" name="hh" max="23" min="0" required></td>
         </tr>
         <tr>
             <td>Input Menit</td>
-            <td><input type="number" name="mm"></td>
+            <td><input type="number" name="mm" max="59" min="0" required ></td>
         </tr>
         <tr>
             <td>Input Detik</td>
-            <td><input type="number" name="ss"></td>
+            <td><input type="number" name="ss" max="59" min="0" required ></td>
         </tr>
             <td><input type="submit" value="Submit" name="submit"></td>
             </table>
@@ -85,9 +85,9 @@
             <div class="result">
             <?php
             if (isset($_POST['submit'])) {
-                $hh = $_POST['hh'];
-                $mm = $_POST['mm'];
-                $ss = $_POST['ss'];
+                $hh = intval($_POST['hh']);
+                $mm = intval($_POST['mm']);
+                $ss = intval($_POST['ss']);
 
                 $ss = $ss + 1;
 
