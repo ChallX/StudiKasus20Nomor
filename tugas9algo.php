@@ -69,13 +69,18 @@ if (isset($_POST['submit'])) {
             background-color: #f0f0f0;
             margin: 0;
             padding: 0;
+            
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
         }
         .container {
             max-width: 400px;
-            margin: 50px auto;
+            margin: 40px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 5px;
+            width: 450px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         form {
